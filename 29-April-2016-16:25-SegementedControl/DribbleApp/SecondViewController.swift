@@ -15,7 +15,7 @@ class SecondViewController: UICollectionViewController, UICollectionViewDelegate
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         
-        self.title = "Dribble"
+        self.title = "Chat"
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -17,13 +17,13 @@ class TabBarViewController: UITabBarController {
         
         let firstController = FirstViewController()
         let firstControllerNavigation = UINavigationController(rootViewController: firstController)
-            firstControllerNavigation.tabBarItem.title = "First"
-            firstControllerNavigation.tabBarItem.image = UIImage(named: "calendar")
+            firstControllerNavigation.tabBarItem.title = "Home"
+            firstControllerNavigation.tabBarItem.image = UIImage(named: "home")
         
         let secondController = SecondViewController(collectionViewLayout: layout)
         let secondControllerNavigation = UINavigationController(rootViewController: secondController)
-            secondControllerNavigation.tabBarItem.title = "Second"
-            secondControllerNavigation.tabBarItem.image = UIImage(named: "calendar")
+            secondControllerNavigation.tabBarItem.title = "Chat"
+            secondControllerNavigation.tabBarItem.image = UIImage(named: "bubble-chat")
         
         self.viewControllers = [firstControllerNavigation, secondControllerNavigation]
     }

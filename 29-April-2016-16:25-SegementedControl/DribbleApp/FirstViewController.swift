@@ -13,7 +13,7 @@ class FirstViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         
-        self.title = "Dribble"
+        self.title = "Home"
     }
     
     override func viewDidAppear(animated: Bool) {
