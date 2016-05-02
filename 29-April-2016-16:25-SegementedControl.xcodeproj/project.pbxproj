@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8013E0911CD73B65001E4F6C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013E0901CD73B65001E4F6C /* Router.swift */; };
 		8097B1B41CD3600F00B5E5C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097B1B31CD3600F00B5E5C6 /* AppDelegate.swift */; };
 		8097B1B61CD3600F00B5E5C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097B1B51CD3600F00B5E5C6 /* ViewController.swift */; };
 		8097B1BB1CD3600F00B5E5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8097B1BA1CD3600F00B5E5C6 /* Assets.xcassets */; };
@@ -15,9 +16,12 @@
 		8097B1D51CD4C21300B5E5C6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097B1D31CD4C21300B5E5C6 /* TabBarViewController.swift */; };
 		8097B1D91CD4C41700B5E5C6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097B1D81CD4C41700B5E5C6 /* SecondViewController.swift */; };
 		8097B1DB1CD4D50800B5E5C6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097B1DA1CD4D50800B5E5C6 /* UIView+Extensions.swift */; };
+		F5733AA54885B156CA9A29E3 /* Pods_29_April_2016_16_25_SegementedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9977EF7193B34457E87DDA9 /* Pods_29_April_2016_16_25_SegementedControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25CA50A5B3929D4A1F4DC003 /* Pods-29-April-2016-16:25-SegementedControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-29-April-2016-16:25-SegementedControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-29-April-2016-16:25-SegementedControl/Pods-29-April-2016-16:25-SegementedControl.release.xcconfig"; sourceTree = "<group>"; };
+		8013E0901CD73B65001E4F6C /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = DribbleApp/Router.swift; sourceTree = "<group>"; };
 		8097B1B01CD3600F00B5E5C6 /* 29-April-2016-16:25-SegementedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29-April-2016-16:25-SegementedControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8097B1B31CD3600F00B5E5C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8097B1B51CD3600F00B5E5C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		8097B1D31CD4C21300B5E5C6 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = DribbleApp/TabBarViewController.swift; sourceTree = "<group>"; };
 		8097B1D81CD4C41700B5E5C6 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = DribbleApp/SecondViewController.swift; sourceTree = "<group>"; };
 		8097B1DA1CD4D50800B5E5C6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "DribbleApp/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		B9977EF7193B34457E87DDA9 /* Pods_29_April_2016_16_25_SegementedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_29_April_2016_16_25_SegementedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0B72642DCE6EE21453ADBF /* Pods-29-April-2016-16:25-SegementedControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-29-April-2016-16:25-SegementedControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-29-April-2016-16:25-SegementedControl/Pods-29-April-2016-16:25-SegementedControl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5733AA54885B156CA9A29E3 /* Pods_29_April_2016_16_25_SegementedControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160C642C5B1CF38075A99554 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B72642DCE6EE21453ADBF /* Pods-29-April-2016-16:25-SegementedControl.debug.xcconfig */,
+				25CA50A5B3929D4A1F4DC003 /* Pods-29-April-2016-16:25-SegementedControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8097B1A71CD3600F00B5E5C6 = {
 			isa = PBXGroup;
 			children = (
 				8097B1B21CD3600F00B5E5C6 /* 29-April-2016-16:25-SegementedControl */,
 				8097B1B11CD3600F00B5E5C6 /* Products */,
+				160C642C5B1CF38075A99554 /* Pods */,
+				C516E9CB859925E259473BF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +95,17 @@
 				8097B1D81CD4C41700B5E5C6 /* SecondViewController.swift */,
 				8097B1D31CD4C21300B5E5C6 /* TabBarViewController.swift */,
 				8097B1DA1CD4D50800B5E5C6 /* UIView+Extensions.swift */,
+				8013E0901CD73B65001E4F6C /* Router.swift */,
 			);
 			name = DribbleApp;
+			sourceTree = "<group>";
+		};
+		C516E9CB859925E259473BF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9977EF7193B34457E87DDA9 /* Pods_29_April_2016_16_25_SegementedControl.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8097B1C21CD3600F00B5E5C6 /* Build configuration list for PBXNativeTarget "29-April-2016-16:25-SegementedControl" */;
 			buildPhases = (
+				EDCF16B40DD66529EE90F5E3 /* Check Pods Manifest.lock */,
 				8097B1AC1CD3600F00B5E5C6 /* Sources */,
 				8097B1AD1CD3600F00B5E5C6 /* Frameworks */,
 				8097B1AE1CD3600F00B5E5C6 /* Resources */,
+				B5303A18A03264649DE1DE10 /* Embed Pods Frameworks */,
+				E72B984B1533A2029BBD473D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +176,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5303A18A03264649DE1DE10 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-29-April-2016-16:25-SegementedControl/Pods-29-April-2016-16:25-SegementedControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72B984B1533A2029BBD473D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-29-April-2016-16:25-SegementedControl/Pods-29-April-2016-16:25-SegementedControl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCF16B40DD66529EE90F5E3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8097B1AC1CD3600F00B5E5C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -154,6 +232,7 @@
 				8097B1DB1CD4D50800B5E5C6 /* UIView+Extensions.swift in Sources */,
 				8097B1D91CD4C41700B5E5C6 /* SecondViewController.swift in Sources */,
 				8097B1D51CD4C21300B5E5C6 /* TabBarViewController.swift in Sources */,
+				8013E0911CD73B65001E4F6C /* Router.swift in Sources */,
 				8097B1D41CD4C21300B5E5C6 /* FirstViewController.swift in Sources */,
 				8097B1B61CD3600F00B5E5C6 /* ViewController.swift in Sources */,
 				8097B1B41CD3600F00B5E5C6 /* AppDelegate.swift in Sources */,
@@ -259,6 +338,7 @@
 		};
 		8097B1C31CD3600F00B5E5C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0B72642DCE6EE21453ADBF /* Pods-29-April-2016-16:25-SegementedControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "29-April-2016-16:25-SegementedControl/Info.plist";
@@ -270,6 +350,7 @@
 		};
 		8097B1C41CD3600F00B5E5C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25CA50A5B3929D4A1F4DC003 /* Pods-29-April-2016-16:25-SegementedControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "29-April-2016-16:25-SegementedControl/Info.plist";

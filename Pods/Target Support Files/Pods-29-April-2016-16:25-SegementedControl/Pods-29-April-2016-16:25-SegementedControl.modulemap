@@ -1,0 +1,6 @@
+framework module Pods_29_April_2016_16_25_SegementedControl {
+  umbrella header "Pods-29-April-2016-16:25-SegementedControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
