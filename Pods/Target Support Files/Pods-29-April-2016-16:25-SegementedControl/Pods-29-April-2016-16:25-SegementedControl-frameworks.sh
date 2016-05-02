@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-29-April-2016-16:25-SegementedControl/Alamofire.framework"
+  install_framework "Pods-29-April-2016-16:25-SegementedControl/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-29-April-2016-16:25-SegementedControl/Alamofire.framework"
+  install_framework "Pods-29-April-2016-16:25-SegementedControl/SwiftyJSON.framework"
 fi

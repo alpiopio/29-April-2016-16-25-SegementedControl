@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D133645A948D11D1D1CCA9F4'
+               BlueprintIdentifier = 'C86269D924AA96E1AEC2D88A'
                BlueprintName = 'Pods-29-April-2016-16:25-SegementedControl'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_29_April_2016_16_25_SegementedControl.framework'>

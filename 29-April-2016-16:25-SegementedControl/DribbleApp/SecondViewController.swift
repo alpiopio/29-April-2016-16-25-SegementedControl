@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SecondViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
@@ -30,6 +31,15 @@ class SecondViewController: UICollectionViewController, UICollectionViewDelegate
         self.collectionView?.alwaysBounceVertical = true
         
         self.collectionView?.registerClass(secondCell.self, forCellWithReuseIdentifier: self.cellID)
+        
+        Alamofire.request(Router.ReadUser("leoleung")).validate().responseJSON { (request, response, result) -> Void in
+            switch result {
+                case .Success:
+                    print("Validation Successful")
+                case .Failure(let error):
+                    print(error)
+            }
+        }
     }
     
     override func viewWillDisappear(animated: Bool) {

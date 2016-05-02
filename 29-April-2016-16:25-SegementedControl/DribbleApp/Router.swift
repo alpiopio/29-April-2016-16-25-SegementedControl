@@ -10,8 +10,8 @@ import UIKit
 import Alamofire
 
 enum Router: URLRequestConvertible {
-    static let baseURLString = "http://example.com"
-    static var OAuthToken: String?
+    static let baseURLString = "https://api.dribbble.com/v1"
+    static var OAuthToken: String? = "deee92874cd47d4454f2b978725c65f088a6d61a2fb3a0eb50d645c20182e277"
     
     case CreateUser([String: AnyObject])
     case ReadUser(String)
@@ -49,7 +49,7 @@ enum Router: URLRequestConvertible {
     var URLRequest: NSMutableURLRequest {
         let URL = NSURL(string: Router.baseURLString)!
         let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
-        mutableURLRequest.HTTPMethod = method.rawValue
+            mutableURLRequest.HTTPMethod = method.rawValue
         
         if let token = Router.OAuthToken {
             mutableURLRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")

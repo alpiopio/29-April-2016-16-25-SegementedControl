@@ -4,6 +4,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '29-April-2016-16:25-SegementedControl' do
-    pod 'Alamofire', '2.0.2'
+    pod 'Alamofire', '~> 2.0.2'
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 end
 
