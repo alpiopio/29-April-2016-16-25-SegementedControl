@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HanekeSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-29-April-2016-16:25-SegementedControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2C2B1953A91633859BF7AD238FF567A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A9CB98A198C9BC903D8ED6782473B36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4B2F30D90D85A544E9EFE2A49D392C25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A716BCBA95925CDC705F5A4BB220A0F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C659C222A4583B58ADC84AEAB61EC252</key>
+		<key>D2DF88E60A6843B8C91498CDE79A1C06</key>
 		<dict>
 			<key>primary</key>
 			<true/>

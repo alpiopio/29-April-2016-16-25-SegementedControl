@@ -25,7 +25,12 @@ class TabBarViewController: UITabBarController {
             secondControllerNavigation.tabBarItem.title = "Chat"
             secondControllerNavigation.tabBarItem.image = UIImage(named: "bubble-chat")
         
-        self.viewControllers = [firstControllerNavigation, secondControllerNavigation]
+        let thirdController = HomeViewController()
+        let thirdControllerNavigation = UINavigationController(rootViewController: thirdController)
+            thirdControllerNavigation.tabBarItem.title = "Gotix"
+            thirdControllerNavigation.tabBarItem.image = UIImage(named: "shopping-cart-add")
+        
+        self.viewControllers = [firstControllerNavigation, secondControllerNavigation, thirdControllerNavigation]
     }
 
 }

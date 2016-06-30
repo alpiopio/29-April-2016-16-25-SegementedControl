@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ExploreItemCollectionViewCell" customModule="_9_April_2016_16_25_SegementedControl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="bNg-61-8XW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iv-OK-Brq">
+                        <rect key="frame" x="8" y="31" width="304" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 events available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw4-7e-vvz">
+                                <rect key="frame" x="0.0" y="38.5" width="304" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramadan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOu-bo-m5i">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MOu-bo-m5i" secondAttribute="trailing" id="2I9-vg-e6q"/>
+                            <constraint firstItem="MOu-bo-m5i" firstAttribute="leading" secondItem="4iv-OK-Brq" secondAttribute="leading" id="DLO-KH-o2g"/>
+                            <constraint firstItem="cw4-7e-vvz" firstAttribute="leading" secondItem="4iv-OK-Brq" secondAttribute="leading" id="O1u-j9-6qr"/>
+                            <constraint firstItem="cw4-7e-vvz" firstAttribute="top" secondItem="MOu-bo-m5i" secondAttribute="bottom" id="gBQ-w8-yHc"/>
+                            <constraint firstItem="MOu-bo-m5i" firstAttribute="top" secondItem="4iv-OK-Brq" secondAttribute="top" id="h8R-8T-18B"/>
+                            <constraint firstAttribute="trailing" secondItem="cw4-7e-vvz" secondAttribute="trailing" id="uo1-40-MVd"/>
+                            <constraint firstAttribute="bottom" secondItem="cw4-7e-vvz" secondAttribute="bottom" id="yvE-2r-PbI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4iv-OK-Brq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="5Mc-nv-Iy4"/>
+                <constraint firstAttribute="bottom" secondItem="bNg-61-8XW" secondAttribute="bottom" id="SKQ-ij-h1c"/>
+                <constraint firstAttribute="trailing" secondItem="4iv-OK-Brq" secondAttribute="trailing" constant="8" id="XKB-PE-vvy"/>
+                <constraint firstItem="4iv-OK-Brq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="c4I-Dh-FAX"/>
+                <constraint firstItem="bNg-61-8XW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dOD-Qz-JDt"/>
+                <constraint firstItem="bNg-61-8XW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g1Q-Hz-Vhh"/>
+                <constraint firstAttribute="trailing" secondItem="bNg-61-8XW" secondAttribute="trailing" id="iqP-2T-ZCf"/>
+            </constraints>
+            <connections>
+                <outlet property="categoryCount" destination="cw4-7e-vvz" id="mE0-Fw-QRQ"/>
+                <outlet property="categoryName" destination="MOu-bo-m5i" id="fF9-1V-Gww"/>
+                <outlet property="themeImage" destination="bNg-61-8XW" id="77x-ot-Vtp"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img" width="218" height="120"/>
+    </resources>
+</document>

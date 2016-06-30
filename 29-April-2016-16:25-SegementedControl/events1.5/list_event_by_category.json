@@ -1,0 +1,119 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": [
+    {
+      "event_id": 17,
+      "name": "Djakarta Warehouse Project",
+      "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,h_200,w_350/v1444112296/dwp_kvibj5.jpg",
+      "description": "Biggest dance music festival in Jakarta",
+      "rating": "17+",
+      "tag": [
+        "Festival",
+        "Dance",
+        "Live",
+        "Outdoor"
+      ],
+      "date": "11 Dec 2015",
+      "date_timestamp": 1449864000,
+      "lowest_available_price": "520000",
+      "location": "JIEXPO - Kemayoran",
+      "status": "incoming",
+      "is_featured": true
+    },
+    {
+      "event_id": 13,
+      "name": "Clean Bandit",
+      "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,h_200,w_350/v1444112005/clean_bandit_tlsx5o.jpg",
+      "description": "Sebuah grup musik yang sedang ramai diperbincangkan berkat hit singel “Rather Be”, Clean Bandit, akan menggelar konsernya di Skenoo Hall, Gandaria City. Setelah tercatat akan mendatangkan The Maine, kali ini Marygops Studios kembali bertindak sebagai promotor dengan bekerja sama dengan 7Kings Entertainment. Tiket konser Clean Bandit akan dijual mulai dari harga Rp 575 ribu (pra-pesan) hingga Rp 775 ribu (normal).",
+      "rating": "E",
+      "tag": [
+        "Events",
+        "Music",
+        "Live",
+        "Indoor"
+      ],
+      "date": "8 Dec 2015",
+      "date_timestamp": 1449601200,
+      "lowest_available_price": "775000",
+      "location": "Skenoo Hall, Gandaria City",
+      "status": "incoming",
+      "is_featured": false
+    },
+    {
+      "event_id": 10,
+      "name": "Andien Metamorfosa 15 Years",
+      "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,h_200,w_350/v1444109794/andien_metamorfosa_fa7xjs.jpg",
+      "description": "Andien akan segera menggelar konser tunggalnya yang bertajuk #andienmetamorfosa di Plenary Hall, Jakarta Convention Center, 15 September mendatang. Konser ini merupakan penanda 15 tahun ia berkiprah di industri musik. Kali ini, Andien menjalin kerjasama dengan Berlian Entertainment sebagai promotor konsernya tersebut. Rencananya, Andien akan dibantu oleh musisi-musisi, seperti  Teza Sumendra, Yovie Widianto, Lloyd Popp & Jevin Julian, The Cash, dan Maliq & D’Essentials. Pembelian tiket untuk konser #andienmetamorfosa dapat dibeli melalui loket.com dengan harga mulai dari Rp 450 ribu hingga Rp 2 juta.",
+      "rating": "E",
+      "tag": [
+        "Events",
+        "Music",
+        "Live",
+        "Indoor"
+      ],
+      "date": "15 Sept 2015",
+      "date_timestamp": 1442343600,
+      "lowest_available_price": "523000",
+      "location": "Plenary Hall, JCC",
+      "status": "ticket_ready",
+      "is_featured": false
+    },
+    {
+      "event_id": 17,
+      "name": "Djakarta Warehouse Project",
+      "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,h_200,w_350/v1444112296/dwp_kvibj5.jpg",
+      "description": "Biggest dance music festival in Jakarta",
+      "rating": "17+",
+      "tag": [
+        "Festival",
+        "Dance",
+        "Live",
+        "Outdoor"
+      ],
+      "date": "11 Dec 2015",
+      "date_timestamp": 1449864000,
+      "lowest_available_price": "520000",
+      "location": "JIEXPO - Kemayoran",
+      "status": "incoming",
+      "is_featured": true
+    },
+    {
+      "event_id": 1,
+      "name": "Bon Jovi Live!",
+      "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,g_west,h_200,w_350/v1444110441/bon_jovi_live_ndcshb.jpg",
+      "description": "Salah satu konser yang sudah ditunggu-tunggu selama 20 tahun oleh para penggemarnya di Indonesia. Sebelumnya, Bon Jovi pernah melakukan konser di Jakarta pada 6 Mei 1995. Tercatat Live Nation Indonesia merupakan promotor yang bertindak untuk mendatangkan band hard rock terkemuka asal Amerika Serikat tersebut. Konser Bon Jovi kali ini digelar di Stadion Utama Gelora Bung Karno, Senayan, Jakarta, 11 September mendatang. Tiket konser Bon Jovi sendiri sudah mulai dijual sejak Senin (29/6) lalu melalui situs bonjovijakarta.com. Harga tiket sendiri dimulai dari Rp 500 ribu hingga Rp 3,5 juta.",
+      "rating": "PG",
+      "tag": [
+        "Events",
+        "Music",
+        "Live",
+        "Outdoor"
+      ],
+      "date": "11 Sept 2015",
+      "date_timestamp": 1441998000,
+      "lowest_available_price": 500000,
+      "location": "Gelora Bung Karno, Jakarta",
+      "status": "ticket_ready",
+      "is_featured": false
+    },
+    {
+      "event_id": 6,
+      "name": "Ariana Grande",
+      "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,h_200,w_350/v1444111375/ariana_grande_h359uj.jpg",
+      "description": "Saat ini Ariana Grande sedang menjalankan tur konser keliling dunia yang bertajuk The Honeymoon Tour. Tidak ketinggalan, Asia merupakan benua yang masuk ke dalam daftar. Kali ini Grande hanya akan bermain di tiga negara Asia, dan Indonesia merupakan salah satunya. Konser tersebut nantinya akan digelar di JIEXPO Kemayoran dan dipromotori oleh Dyandra Promosindo. Untuk dapat menyaksikan penampilan dari wanita yang terkenal karena memiliki suara tinggi tersebut, penonton perlu mengeluarkan Rp 800 ribu hingga Rp 6 juta rupiah.",
+      "rating": "PG",
+      "tag": [
+        "Events",
+        "Music",
+        "Live"
+      ],
+      "date": "26 Aug 2015",
+      "date_timestamp": 1440615600,
+      "lowest_available_price": 1000000,
+      "location": "JIEXPO - Kemayoran",
+      "status": "canceled",
+      "is_featured": false
+    }
+  ]
+}

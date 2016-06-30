@@ -1,0 +1,41 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": {
+    "featured_events": [
+      {
+        "event_id": 18,
+        "name": "Java Jazz Festival",
+        "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,h_200,w_350/v1444112695/java_jazz_f0jb9o.jpg",
+        "featured": true
+      },
+      {
+        "event_id": 17,
+        "name": "Djakarta Warehouse Project",
+        "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,h_200,w_350/v1444112296/dwp_kvibj5.jpg",
+        "description": "Biggest dance music festival in Jakarta",
+        "featured": true
+      },
+      {
+        "event_id": 13,
+        "name": "Clean Bandit",
+        "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,h_200,w_350/v1444112005/clean_bandit_tlsx5o.jpg",
+        "featured": true
+      },
+      {
+        "event_id": 1,
+        "name": "Bon Jovi Live!",
+        "image": "http://res.cloudinary.com/randi-ice/image/upload/c_fill,g_west,h_200,w_350/v1444110441/bon_jovi_live_ndcshb.jpg",
+        "featured": true
+      }
+    ],
+    "whats_happening_view": {
+      "text": "WHAT'S HAPPENING",
+      "image": "http://res.cloudinary.com/gotix/image/upload/v1458537245/Whats_Happening_cn5j1q.png"
+    },
+    "category_view": {
+      "text": "CATEGORY",
+      "image": "http://res.cloudinary.com/gotix/image/upload/v1458537244/category_brexyx.png"
+    }
+  }
+}

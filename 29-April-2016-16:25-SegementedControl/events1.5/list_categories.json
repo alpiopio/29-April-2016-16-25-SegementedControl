@@ -1,0 +1,41 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": [
+    {
+      "category_id": 1,
+      "name": "MUSIC",
+      "path": "http://res.cloudinary.com/gotix/image/upload/v1458537243/music_pavfdy.png"
+    },
+    {
+      "category_id": 2,
+      "name": "ARTS",
+      "path": "http://res.cloudinary.com/gotix/image/upload/v1458537244/art_a1vgsf.png"
+    },
+    {
+      "category_id": 3,
+      "name": "ATTRACTION",
+      "path": "http://res.cloudinary.com/gotix/image/upload/v1458537245/attraction_lmmylx.png"
+    },
+    {
+      "category_id": 4,
+      "name": "SPORTS",
+      "path": "http://res.cloudinary.com/gotix/image/upload/v1458537243/export_tmamym.png"
+    },
+    {
+      "category_id": 5,
+      "name": "WORKSHOP",
+      "path": "http://res.cloudinary.com/gotix/image/upload/v1458537245/workshop_eahxnw.png"
+    },
+    {
+      "category_id": 6,
+      "name": "EXHIBITION",
+      "path": "http://res.cloudinary.com/gotix/image/upload/v1458537245/exhibition_htqtzc.png"
+    },
+    {
+      "category_id": 7,
+      "name": "OTHERS",
+      "path": "http://res.cloudinary.com/gotix/image/upload/v1458537243/other_wpjubl.png"
+    }
+  ]
+}

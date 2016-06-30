@@ -17,6 +17,7 @@ enum Router: URLRequestConvertible {
     case ReadUser(String)
     case UpdateUser(String, [String: AnyObject])
     case DestroyUser(String)
+    case Followers(String, [String: AnyObject])
     
     var method: Alamofire.Method {
         switch self {
@@ -28,6 +29,8 @@ enum Router: URLRequestConvertible {
             return .PUT
         case .DestroyUser:
             return .DELETE
+        case .Followers:
+            return .GET
         }
     }
     
@@ -41,6 +44,8 @@ enum Router: URLRequestConvertible {
             return "/users/\(username)"
         case .DestroyUser(let username):
             return "/users/\(username)"
+        case .Followers(let username, _):
+            return "/users/\(username)/followers"
         }
     }
     
@@ -59,6 +64,8 @@ enum Router: URLRequestConvertible {
         case .CreateUser(let parameters):
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
         case .UpdateUser(_, let parameters):
+            return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: parameters).0
+        case .Followers(_, let parameters):
             return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: parameters).0
         default:
             return mutableURLRequest

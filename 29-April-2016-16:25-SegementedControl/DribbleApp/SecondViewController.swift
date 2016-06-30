@@ -7,16 +7,16 @@
 //
 
 import UIKit
-import Alamofire
 
-class SecondViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    
+class SecondViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, EstimatedHeigthProtocol {
     private let cellID = "cellID"
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         
         self.title = "Chat"
+        
+        self.setup()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -31,15 +31,6 @@ class SecondViewController: UICollectionViewController, UICollectionViewDelegate
         self.collectionView?.alwaysBounceVertical = true
         
         self.collectionView?.registerClass(secondCell.self, forCellWithReuseIdentifier: self.cellID)
-        
-        Alamofire.request(Router.ReadUser("leoleung")).validate().responseJSON { (request, response, result) -> Void in
-            switch result {
-                case .Success:
-                    print("Validation Successful")
-                case .Failure(let error):
-                    print(error)
-            }
-        }
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -69,13 +60,23 @@ class SecondViewController: UICollectionViewController, UICollectionViewDelegate
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.cellID, forIndexPath: indexPath) as! secondCell
         
-        return collectionView.dequeueReusableCellWithReuseIdentifier(self.cellID, forIndexPath: indexPath)
+        let message = "Today, we'll look into how to create those nifty little chat bubbles that you see inside of almost every chat application out there. Follow along and you'll be amazed how easy it is! Enjoy :) Today, we'll look into how to create those nifty little chat bubbles that you see inside of almost every chat application out there. Follow along and you'll be amazed how easy it is! Enjoy :)"
+        
+        cell.messageLabel.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, estimatedFrame(message, offset: 50, font: UIFont.systemFontOfSize(12)).height)
+        
+        return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let message = "Today, we'll look into how to create those nifty little chat bubbles that you see inside of almost every chat application out there. Follow along and you'll be amazed how easy it is! Enjoy :) Today, we'll look into how to create those nifty little chat bubbles that you see inside of almost every chat application out there. Follow along and you'll be amazed how easy it is! Enjoy :)"
         
-        return CGSizeMake(self.view.frame.width, 100)
+        return CGSizeMake(UIScreen.mainScreen().bounds.width, estimatedFrame(message, offset: 50, font: UIFont.systemFontOfSize(12)).height + 80)
+    }
+    
+    func setup() {
+        
     }
     
 }
@@ -135,7 +136,7 @@ class secondCell: UICollectionViewCell {
     
     let messageLabel: UILabel = {
         let messageLabel = UILabel()
-            messageLabel.text = "SegementedControl[39068:565410] Simulator user has requested new graphics quality: 10"
+            messageLabel.text = "Today, we'll look into how to create those nifty little chat bubbles that you see inside of almost every chat application out there. Follow along and you'll be amazed how easy it is! Enjoy :) Today, we'll look into how to create those nifty little chat bubbles that you see inside of almost every chat application out there. Follow along and you'll be amazed how easy it is! Enjoy :)"
             messageLabel.textColor = UIColor.grayColor()
             messageLabel.font = UIFont.systemFontOfSize(12)
             messageLabel.lineBreakMode = .ByTruncatingTail

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EventHelloCollectionViewCell" customModule="_9_April_2016_16_25_SegementedControl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="OJ1-GA-6oW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBP-4M-VA8">
+                        <rect key="frame" x="19" y="27" width="282" height="126.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4c-hD-JRX">
+                                <rect key="frame" x="0.0" y="64" width="282" height="62.5"/>
+                                <string key="text">Explore what’s happens 
+in your town today.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Cinta," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lst-4t-k5q">
+                                <rect key="frame" x="0.0" y="0.0" width="282" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E4c-hD-JRX" firstAttribute="leading" secondItem="NBP-4M-VA8" secondAttribute="leading" id="Gzy-CJ-n7M"/>
+                            <constraint firstAttribute="trailing" secondItem="E4c-hD-JRX" secondAttribute="trailing" id="HlV-zI-Ceu"/>
+                            <constraint firstAttribute="trailing" secondItem="lst-4t-k5q" secondAttribute="trailing" id="WO3-xW-qAC"/>
+                            <constraint firstItem="E4c-hD-JRX" firstAttribute="top" secondItem="lst-4t-k5q" secondAttribute="bottom" constant="21" id="XIy-eK-dWh"/>
+                            <constraint firstAttribute="bottom" secondItem="E4c-hD-JRX" secondAttribute="bottom" id="d5C-rP-HfG"/>
+                            <constraint firstItem="lst-4t-k5q" firstAttribute="top" secondItem="NBP-4M-VA8" secondAttribute="top" id="kUa-gs-KSt"/>
+                            <constraint firstItem="lst-4t-k5q" firstAttribute="leading" secondItem="NBP-4M-VA8" secondAttribute="leading" id="t2E-Rz-WKz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NBP-4M-VA8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="0nl-Cu-gnr"/>
+                <constraint firstAttribute="trailing" secondItem="OJ1-GA-6oW" secondAttribute="trailing" id="Fm4-qi-jYb"/>
+                <constraint firstItem="OJ1-GA-6oW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KLr-oe-H3y"/>
+                <constraint firstItem="NBP-4M-VA8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dzL-56-qA2"/>
+                <constraint firstAttribute="bottom" secondItem="OJ1-GA-6oW" secondAttribute="bottom" id="gUA-Su-b1D"/>
+                <constraint firstAttribute="trailing" secondItem="NBP-4M-VA8" secondAttribute="trailing" constant="19" id="l4T-2c-PfU"/>
+                <constraint firstItem="NBP-4M-VA8" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="sBU-sC-QND"/>
+                <constraint firstItem="OJ1-GA-6oW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xuO-Eu-pVK"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="dzL-56-qA2"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="descLabel" destination="E4c-hD-JRX" id="SBe-QH-wZK"/>
+                <outlet property="hiLabel" destination="lst-4t-k5q" id="M6H-Dc-Uzd"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img" width="218" height="120"/>
+    </resources>
+</document>
