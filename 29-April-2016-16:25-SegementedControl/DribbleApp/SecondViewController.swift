@@ -31,6 +31,24 @@ class SecondViewController: UICollectionViewController, UICollectionViewDelegate
         self.collectionView?.alwaysBounceVertical = true
         
         self.collectionView?.registerClass(secondCell.self, forCellWithReuseIdentifier: self.cellID)
+        
+        // Gesture
+        let recognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipe(_:)))
+            recognizer.direction = UISwipeGestureRecognizerDirection.Left
+        self.collectionView?.addGestureRecognizer(recognizer)
+    }
+    
+    func didSwipe(recognizer: UIGestureRecognizer) {
+        if recognizer.state == UIGestureRecognizerState.Ended {
+            let swipeLocation = recognizer.locationInView(self.collectionView)
+            if let swipedIndexPath = self.collectionView?.indexPathForItemAtPoint(swipeLocation) {
+                if let swipedCell = self.collectionView?.cellForItemAtIndexPath(swipedIndexPath) {
+                    UIView.animateWithDuration(0.2, animations: {
+                        swipedCell.frame = CGRectMake(UIScreen.mainScreen().bounds.width/2, swipedCell.frame.minY, swipedCell.frame.width, swipedCell.frame.height)
+                    })
+                }
+            }
+        }
     }
     
     override func viewWillDisappear(animated: Bool) {
