@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="homeSegmentedController" destination="uAl-QJ-H07" id="S4q-S9-0te"/>
                 <outlet property="homeView" destination="c1o-Rv-7II" id="fZb-lX-gEe"/>
+                <outlet property="topSearchConstraint" destination="NAB-pW-yuW" id="Xwl-NO-WnE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uAl-QJ-H07">
-                    <rect key="frame" x="8" y="75" width="304" height="29"/>
+                    <rect key="frame" x="8" y="10" width="304" height="29"/>
                     <segments>
                         <segment title="EVENTS"/>
                         <segment title="MOVIES"/>
@@ -30,21 +31,24 @@
                     </connections>
                 </segmentedControl>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-Rv-7II">
-                    <rect key="frame" x="0.0" y="111" width="320" height="457"/>
+                    <rect key="frame" x="0.0" y="46" width="320" height="457"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="457" id="L4h-iE-oo6"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="uAl-QJ-H07" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="35B-FQ-cF3"/>
                 <constraint firstAttribute="trailing" secondItem="c1o-Rv-7II" secondAttribute="trailing" id="Eel-9h-haa"/>
+                <constraint firstItem="c1o-Rv-7II" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="46" id="NAB-pW-yuW"/>
                 <constraint firstAttribute="trailing" secondItem="uAl-QJ-H07" secondAttribute="trailing" constant="8" id="Vun-m6-hCw"/>
-                <constraint firstItem="uAl-QJ-H07" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="75" id="cRL-b2-tbl"/>
+                <constraint firstItem="uAl-QJ-H07" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="cRL-b2-tbl"/>
                 <constraint firstItem="c1o-Rv-7II" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dFB-0x-VNB"/>
-                <constraint firstItem="c1o-Rv-7II" firstAttribute="top" secondItem="uAl-QJ-H07" secondAttribute="bottom" constant="8" id="eik-4L-kiC"/>
-                <constraint firstAttribute="bottom" secondItem="c1o-Rv-7II" secondAttribute="bottom" id="klo-xy-HiJ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="480" y="330"/>
         </view>
     </objects>

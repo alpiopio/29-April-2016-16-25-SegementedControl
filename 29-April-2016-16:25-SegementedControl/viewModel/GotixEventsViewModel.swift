@@ -13,7 +13,13 @@ struct GotixEventsViewModel {
     
     var gotixEventsModel: [ GotixEventsModel ]? = [] {
         didSet {
-            print(self.gotixEventsModel?.first?.featured_events.count)
+            
+        }
+    }
+    
+    var gotixHodealsModel: [ GotixEventsModel ]? = [] {
+        didSet {
+            
         }
     }
     
@@ -22,21 +28,37 @@ struct GotixEventsViewModel {
     }
     
     private mutating func parseJSON() {
-        if let path = NSBundle.mainBundle().pathForResource("list_home_page_data", ofType: "json") {
+        if let path = NSBundle.mainBundle().pathForResource("list_event_by_category", ofType: "json") {
             do {
                 let data = try(NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe))
                 let jsonDictionary = try(NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers))
                 
-                if let eventDictionary = jsonDictionary["data"] as? [String: AnyObject] {
-                    self.gotixEventsModel?.append(GotixEventsModel(json: JSON(eventDictionary)))
-                }
-                
-//                if let eventDictionary = jsonDictionary["data"] as? [[String: AnyObject]] {
-//                    for eventDictionary in eventDictionary {
-//                        self.gotixEventsModel?.append(GotixEventsModel(json: JSON(eventDictionary)))
-//                    }
+//                if let eventDictionary = jsonDictionary["data"] as? [String: AnyObject] {
+//                    self.gotixEventsModel?.append(GotixEventsModel(json: JSON(eventDictionary)))
 //                }
-                print(jsonDictionary)
+                
+                if let eventDictionary = jsonDictionary["data"] as? [[String: AnyObject]] {
+                    for eventDictionary in eventDictionary {
+                        self.gotixEventsModel?.append(GotixEventsModel(json: JSON(eventDictionary)))
+                    }
+                }
+                print(String(jsonDictionary))
+            } catch let err {
+                print(err)
+            }
+        }
+        
+        if let path = NSBundle.mainBundle().pathForResource("list_hot_deals_events", ofType: "json") {
+            do {
+                let data = try(NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe))
+                let jsonDictionary = try(NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers))
+                
+                if let eventDictionary = jsonDictionary["data"] as? [[String: AnyObject]] {
+                    for eventDictionary in eventDictionary {
+                        self.gotixHodealsModel?.append(GotixEventsModel(json: JSON(eventDictionary)))
+                    }
+                }
+                print(String(jsonDictionary))
             } catch let err {
                 print(err)
             }

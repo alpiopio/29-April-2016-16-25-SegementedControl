@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="Header" id="iN0-l3-epB" customClass="Header" customModule="_9_April_2016_16_25_SegementedControl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="dDZ-AC-Gp3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsI-sL-NI8">
+                    <rect key="frame" x="19.5" y="220" width="281" height="128.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otm-GA-lCf">
+                            <rect key="frame" x="0.0" y="65" width="281" height="63.5"/>
+                            <string key="text">Explore what’s happens 
+in your town today.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Cinta," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpN-Us-PLt">
+                            <rect key="frame" x="0.0" y="0.0" width="281" height="44"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gpN-Us-PLt" firstAttribute="top" secondItem="RsI-sL-NI8" secondAttribute="top" id="9cM-Pg-kxY"/>
+                        <constraint firstItem="Otm-GA-lCf" firstAttribute="top" secondItem="gpN-Us-PLt" secondAttribute="bottom" constant="21" id="Fqb-qX-VR2"/>
+                        <constraint firstItem="Otm-GA-lCf" firstAttribute="leading" secondItem="RsI-sL-NI8" secondAttribute="leading" id="LFU-uL-vg9"/>
+                        <constraint firstAttribute="trailing" secondItem="Otm-GA-lCf" secondAttribute="trailing" id="jl3-ki-SHx"/>
+                        <constraint firstAttribute="trailing" secondItem="gpN-Us-PLt" secondAttribute="trailing" id="oet-QL-WoW"/>
+                        <constraint firstItem="gpN-Us-PLt" firstAttribute="leading" secondItem="RsI-sL-NI8" secondAttribute="leading" id="s39-V5-8O5"/>
+                        <constraint firstAttribute="bottom" secondItem="Otm-GA-lCf" secondAttribute="bottom" id="zbb-OZ-nxi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dDZ-AC-Gp3" secondAttribute="bottom" id="Fk8-d7-ft9"/>
+                <constraint firstItem="RsI-sL-NI8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LHH-TQ-Jah"/>
+                <constraint firstItem="dDZ-AC-Gp3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Sm0-Tu-XeV"/>
+                <constraint firstAttribute="trailing" secondItem="dDZ-AC-Gp3" secondAttribute="trailing" id="fvY-d0-Kg8"/>
+                <constraint firstItem="dDZ-AC-Gp3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h6Q-8n-HwI"/>
+                <constraint firstItem="RsI-sL-NI8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="q9A-ks-9Op"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="429" y="330"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img" width="218" height="120"/>
+    </resources>
+</document>

@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeEvents: UIView {
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var viewModel: GotixEventsViewModel?

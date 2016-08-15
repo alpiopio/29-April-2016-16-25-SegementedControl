@@ -12,6 +12,8 @@ class HomeMovies: UIView {
     @IBOutlet weak var placeButton: UIButton!
     @IBOutlet weak var moviesCollectionView: UICollectionView!
     
+    private var collectionViewController: MoviesColectionviewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -22,6 +24,8 @@ class HomeMovies: UIView {
         self.configureBannerView()
         self.configurePlaceButton()
         self.congfigureMoviesCollectionView()
+        
+        self.collectionViewController = MoviesColectionviewController(collectionView: self.moviesCollectionView)
     }
     
     private func configureBannerView() {

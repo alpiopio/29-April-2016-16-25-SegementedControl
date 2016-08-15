@@ -15,9 +15,15 @@ class EventHotDealsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var viewAllButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var viewModel: GotixEventsViewModel? {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        print("Hot Deals")
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         
@@ -31,13 +37,38 @@ extension EventHotDealsCollectionViewCell: UICollectionViewDataSource, UICollect
     private func registerNibs() {
         let hotDealsNib: UINib = UINib(nibName: "HotDealsItemCollectionViewCell", bundle: nil)
         self.collectionView?.registerNib(hotDealsNib, forCellWithReuseIdentifier: "cellHello")
+        
+        let exploreMoreNib: UINib = UINib(nibName: "ExploreMoreItemCollectionViewCell", bundle: nil)
+        self.collectionView?.registerNib(exploreMoreNib, forCellWithReuseIdentifier: "cellExplore")
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if let count = self.viewModel?.gotixEventsModel?.count {
+            return count+1
+        }
+        return 0
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        if let count = self.viewModel?.gotixEventsModel?.count {
+            if indexPath.item == count {
+                let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellExplore", forIndexPath: indexPath) as! ExploreMoreItemCollectionViewCell
+                    cell.layer.borderColor = UIColor.groupTableViewBackgroundColor().CGColor
+                    cell.layer.borderWidth = 1
+                    cell.layer.cornerRadius = 5
+                return cell
+            } else {
+                let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellHello", forIndexPath: indexPath) as! HotDealsItemCollectionViewCell
+                    cell.layer.borderColor = UIColor.groupTableViewBackgroundColor().CGColor
+                    cell.layer.borderWidth = 1
+                    cell.layer.cornerRadius = 5
+                
+                    if let model = self.viewModel?.gotixEventsModel {
+                        cell.model = model[indexPath.row]
+                    }
+                return cell
+            }
+        }
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellHello", forIndexPath: indexPath) as! HotDealsItemCollectionViewCell
             cell.layer.borderColor = UIColor.groupTableViewBackgroundColor().CGColor
             cell.layer.borderWidth = 1

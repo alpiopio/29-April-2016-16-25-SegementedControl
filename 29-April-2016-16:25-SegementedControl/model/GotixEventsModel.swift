@@ -29,6 +29,8 @@ struct GotixEventsModel {
     var featured_events: [ FeaturedEventsModel ] = []
     var category_id: Int?
     var path: String?
+    var order: Int?
+    var event_count: Int?
     
     init(json: JSON) {
         self.event_id = json["event_id"].intValue
@@ -67,6 +69,8 @@ struct GotixEventsModel {
         
         self.category_id = json["category_id"].intValue
         self.path = json["path"].stringValue
+        self.order = json["order"].intValue
+        self.event_count = json["event_count"].intValue
     }
 }
 

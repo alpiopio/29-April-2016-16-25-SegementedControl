@@ -32,7 +32,10 @@ class HotDealsItemCollectionViewCell: UICollectionViewCell {
                 self.eventPrice.text = String(price)
             }
             if let discount = self.model?.discount_price {
-                self.eventDiscount.text = String(discount)
+                let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: String(discount))
+                    attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
+                
+                self.eventDiscount.attributedText = attributeString
             }
         }
     }

@@ -29,6 +29,10 @@
 		804132481D2230740004797A /* list_hot_deals_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 804132431D2230740004797A /* list_hot_deals_events.json */; };
 		8041324B1D22337E0004797A /* GotixEventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8041324A1D22337E0004797A /* GotixEventsModel.swift */; };
 		8041324E1D223B210004797A /* GotixEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8041324D1D223B210004797A /* GotixEventsViewModel.swift */; };
+		8048E64C1D5C5B5F003597C8 /* TryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8048E64A1D5C5B5F003597C8 /* TryViewController.swift */; };
+		8048E64D1D5C5B5F003597C8 /* TryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8048E64B1D5C5B5F003597C8 /* TryViewController.xib */; };
+		809046821D34BDF400D3F93E /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809046811D34BDF400D3F93E /* Header.xib */; };
+		809046841D34BE0900D3F93E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809046831D34BE0900D3F93E /* Header.swift */; };
 		8097B1B41CD3600F00B5E5C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097B1B31CD3600F00B5E5C6 /* AppDelegate.swift */; };
 		8097B1B61CD3600F00B5E5C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097B1B51CD3600F00B5E5C6 /* ViewController.swift */; };
 		8097B1BB1CD3600F00B5E5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8097B1BA1CD3600F00B5E5C6 /* Assets.xcassets */; };
@@ -53,6 +57,8 @@
 		80A9521F1D23D79300E0CFF6 /* HotDealsItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A9521D1D23D79300E0CFF6 /* HotDealsItemCollectionViewCell.xib */; };
 		80C7B5B21D23702200B6BF9D /* HomeNoTicket.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C7B5B11D23702200B6BF9D /* HomeNoTicket.xib */; };
 		80C7B5B41D23704E00B6BF9D /* HomeNoTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7B5B31D23704E00B6BF9D /* HomeNoTicket.swift */; };
+		80EAA7731D251EEB0056C293 /* ExploreMoreItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EAA7711D251EEB0056C293 /* ExploreMoreItemCollectionViewCell.swift */; };
+		80EAA7741D251EEC0056C293 /* ExploreMoreItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80EAA7721D251EEB0056C293 /* ExploreMoreItemCollectionViewCell.xib */; };
 		80EF24731CD882440027B722 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80EF24721CD882440027B722 /* Config.plist */; };
 		80F912A11CD8579400D5D99C /* dribbleShots.txt in Resources */ = {isa = PBXBuildFile; fileRef = 80F912A01CD8579400D5D99C /* dribbleShots.txt */; };
 /* End PBXBuildFile section */
@@ -81,6 +87,10 @@
 		804132431D2230740004797A /* list_hot_deals_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = list_hot_deals_events.json; path = events1.5/list_hot_deals_events.json; sourceTree = "<group>"; };
 		8041324A1D22337E0004797A /* GotixEventsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GotixEventsModel.swift; path = model/GotixEventsModel.swift; sourceTree = "<group>"; };
 		8041324D1D223B210004797A /* GotixEventsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GotixEventsViewModel.swift; path = viewModel/GotixEventsViewModel.swift; sourceTree = "<group>"; };
+		8048E64A1D5C5B5F003597C8 /* TryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TryViewController.swift; path = DribbleApp/TryViewController.swift; sourceTree = "<group>"; };
+		8048E64B1D5C5B5F003597C8 /* TryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TryViewController.xib; path = DribbleApp/TryViewController.xib; sourceTree = "<group>"; };
+		809046811D34BDF400D3F93E /* Header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
+		809046831D34BE0900D3F93E /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		8097B1B01CD3600F00B5E5C6 /* 29-April-2016-16:25-SegementedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29-April-2016-16:25-SegementedControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8097B1B31CD3600F00B5E5C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8097B1B51CD3600F00B5E5C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +117,8 @@
 		80A9521D1D23D79300E0CFF6 /* HotDealsItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotDealsItemCollectionViewCell.xib; path = collectionViewCell/HotDealsItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		80C7B5B11D23702200B6BF9D /* HomeNoTicket.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeNoTicket.xib; sourceTree = "<group>"; };
 		80C7B5B31D23704E00B6BF9D /* HomeNoTicket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNoTicket.swift; sourceTree = "<group>"; };
+		80EAA7711D251EEB0056C293 /* ExploreMoreItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreMoreItemCollectionViewCell.swift; path = collectionViewCell/ExploreMoreItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		80EAA7721D251EEB0056C293 /* ExploreMoreItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExploreMoreItemCollectionViewCell.xib; path = collectionViewCell/ExploreMoreItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		80EF24721CD882440027B722 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Config.plist; path = DribbleApp/Config.plist; sourceTree = "<group>"; };
 		80F912A01CD8579400D5D99C /* dribbleShots.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dribbleShots.txt; sourceTree = "<group>"; };
 		9B7540D67CA6635D73B272EA /* Pods_29_April_2016_16_25_SegementedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_29_April_2016_16_25_SegementedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,6 +245,12 @@
 				80A9521D1D23D79300E0CFF6 /* HotDealsItemCollectionViewCell.xib */,
 				80A257BA1D23F75A0035F8B8 /* WhatsHappeningCollectionViewCell.swift */,
 				80A257BB1D23F75A0035F8B8 /* WhatsHappeningCollectionViewCell.xib */,
+				80EAA7711D251EEB0056C293 /* ExploreMoreItemCollectionViewCell.swift */,
+				80EAA7721D251EEB0056C293 /* ExploreMoreItemCollectionViewCell.xib */,
+				809046811D34BDF400D3F93E /* Header.xib */,
+				809046831D34BE0900D3F93E /* Header.swift */,
+				8048E64A1D5C5B5F003597C8 /* TryViewController.swift */,
+				8048E64B1D5C5B5F003597C8 /* TryViewController.xib */,
 			);
 			name = DribbleApp;
 			sourceTree = "<group>";
@@ -311,6 +329,8 @@
 				804132461D2230740004797A /* list_featured_events.json in Resources */,
 				80EF24731CD882440027B722 /* Config.plist in Resources */,
 				80C7B5B21D23702200B6BF9D /* HomeNoTicket.xib in Resources */,
+				8048E64D1D5C5B5F003597C8 /* TryViewController.xib in Resources */,
+				809046821D34BDF400D3F93E /* Header.xib in Resources */,
 				8041322F1D20FD780004797A /* HomeEvents.xib in Resources */,
 				80A9520F1D23AE0500E0CFF6 /* EventWhatsHappeningCollectionViewCell.xib in Resources */,
 				804132471D2230740004797A /* list_home_page_data.json in Resources */,
@@ -324,6 +344,7 @@
 				804132371D2104F60004797A /* HomeMyTickets.xib in Resources */,
 				804132451D2230740004797A /* list_event_by_category.json in Resources */,
 				80A952071D239B8E00E0CFF6 /* EventHelloCollectionViewCell.xib in Resources */,
+				80EAA7741D251EEC0056C293 /* ExploreMoreItemCollectionViewCell.xib in Resources */,
 				8041322B1D20FB5F0004797A /* HomeViewController.xib in Resources */,
 				804132331D2101FF0004797A /* HomeMovies.xib in Resources */,
 				80A952171D23CDAD00E0CFF6 /* EventExploreCollectionViewCell.xib in Resources */,
@@ -399,6 +420,7 @@
 				8023DED51CED69ED0032546E /* SecondViewModel.swift in Sources */,
 				8041323B1D2115510004797A /* HomePlace.swift in Sources */,
 				80A952161D23CDAD00E0CFF6 /* EventExploreCollectionViewCell.swift in Sources */,
+				80EAA7731D251EEB0056C293 /* ExploreMoreItemCollectionViewCell.swift in Sources */,
 				8097B1DB1CD4D50800B5E5C6 /* UIView+Extensions.swift in Sources */,
 				8097B1D91CD4C41700B5E5C6 /* SecondViewController.swift in Sources */,
 				8097B1D51CD4C21300B5E5C6 /* TabBarViewController.swift in Sources */,
@@ -406,9 +428,11 @@
 				8041322A1D20FB5F0004797A /* HomeViewController.swift in Sources */,
 				8097B1D41CD4C21300B5E5C6 /* FirstViewController.swift in Sources */,
 				8041322D1D20FD310004797A /* HomeEvents.swift in Sources */,
+				8048E64C1D5C5B5F003597C8 /* TryViewController.swift in Sources */,
 				80A257BC1D23F75A0035F8B8 /* WhatsHappeningCollectionViewCell.swift in Sources */,
 				804132311D2101E90004797A /* HomeMovies.swift in Sources */,
 				80A952121D23C30400E0CFF6 /* EventHotDealsCollectionViewCell.swift in Sources */,
+				809046841D34BE0900D3F93E /* Header.swift in Sources */,
 				8097B1B61CD3600F00B5E5C6 /* ViewController.swift in Sources */,
 				8097B1B41CD3600F00B5E5C6 /* AppDelegate.swift in Sources */,
 				80A952061D239B8E00E0CFF6 /* EventHelloCollectionViewCell.swift in Sources */,

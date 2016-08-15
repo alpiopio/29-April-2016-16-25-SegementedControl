@@ -16,7 +16,9 @@ class ExploreItemCollectionViewCell: UICollectionViewCell {
     
     var model: GotixEventsModel? {
         didSet {
-            
+            if let name = self.model?.name {
+                self.categoryName.text = name
+            }
         }
     }
     

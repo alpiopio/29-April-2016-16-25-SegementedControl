@@ -48,7 +48,7 @@
                             <constraint firstItem="oQ9-7E-jPF" firstAttribute="centerY" secondItem="xd5-BJ-wIT" secondAttribute="centerY" id="yHf-ls-4i0"/>
                         </constraints>
                     </view>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M2u-tf-5QH">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M2u-tf-5QH">
                         <rect key="frame" x="0.0" y="70" width="320" height="270"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jt1-Xp-790">

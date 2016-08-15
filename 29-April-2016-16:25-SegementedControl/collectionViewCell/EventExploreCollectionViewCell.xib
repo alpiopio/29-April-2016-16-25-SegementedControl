@@ -49,9 +49,9 @@
                         </constraints>
                     </view>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uc7-mP-wyJ">
-                        <rect key="frame" x="0.0" y="70" width="320" height="270"/>
+                        <rect key="frame" x="0.0" y="70" width="320" height="290"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G8i-LV-XOe">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G8i-LV-XOe">
                             <size key="itemSize" width="280" height="120"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -68,10 +68,15 @@
                 <constraint firstItem="uc7-mP-wyJ" firstAttribute="top" secondItem="8VN-IS-FzY" secondAttribute="bottom" id="hMA-rq-3oB"/>
                 <constraint firstItem="8VN-IS-FzY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pXt-wj-1Qt"/>
                 <constraint firstItem="uc7-mP-wyJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pop-Pa-LBi"/>
-                <constraint firstAttribute="bottom" secondItem="uc7-mP-wyJ" secondAttribute="bottom" constant="20" id="uwQ-aZ-l9a"/>
+                <constraint firstAttribute="bottom" secondItem="uc7-mP-wyJ" secondAttribute="bottom" id="uwQ-aZ-l9a"/>
                 <constraint firstAttribute="trailing" secondItem="8VN-IS-FzY" secondAttribute="trailing" id="wwv-Yh-ul7"/>
                 <constraint firstAttribute="trailing" secondItem="uc7-mP-wyJ" secondAttribute="trailing" id="xmX-Bc-112"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hMA-rq-3oB"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="collectionView" destination="uc7-mP-wyJ" id="eSl-Mu-u4y"/>
                 <outlet property="iconImage" destination="q7e-gM-DiE" id="c2R-2x-t48"/>

@@ -15,6 +15,12 @@ class EventExploreCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var viewAllButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var viewModel: GotixEventsViewModel? {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -34,15 +40,23 @@ extension EventExploreCollectionViewCell: UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if let count = self.viewModel?.gotixEventsModel?.count {
+            return count
+        }
+        return 0
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCellWithReuseIdentifier("cellHello", forIndexPath: indexPath) as! ExploreItemCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cellHello", forIndexPath: indexPath) as! ExploreItemCollectionViewCell
+        
+            if let model = self.viewModel?.gotixEventsModel {
+                cell.model = model[indexPath.row]
+            }
+        return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.width*(120/360))
+        return CGSizeMake(UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.width*(125/375))
     }
     
 }
