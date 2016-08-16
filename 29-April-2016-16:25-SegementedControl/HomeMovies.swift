@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HomeMovies: UIView {
     @IBOutlet weak var placeButton: UIButton!
     @IBOutlet weak var moviesCollectionView: UICollectionView!
+    @IBOutlet weak var videoPlayer: UIView!
     
     private var collectionViewController: MoviesColectionviewController?
     
@@ -18,6 +20,16 @@ class HomeMovies: UIView {
         super.awakeFromNib()
         
         self.configure()
+        
+        let urlString = "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+        if let url = NSURL(string: urlString) {
+            let player = AVPlayer(URL: url)
+            let playerLayer = AVPlayerLayer(player: player)
+            self.videoPlayer.layer.addSublayer(playerLayer)
+            playerLayer.frame = self.videoPlayer.frame
+            
+            player.play()
+        }
     }
     
     private func configure() {

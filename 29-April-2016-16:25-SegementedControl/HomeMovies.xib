@@ -21,6 +21,10 @@
                         <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RZt-Vj-fNK">
                             <rect key="frame" x="0.0" y="143" width="320" height="37"/>
                         </pageControl>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dx8-s2-lNz">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -28,8 +32,12 @@
                         <constraint firstAttribute="trailing" secondItem="LWM-3Q-7Gx" secondAttribute="trailing" id="BA1-aF-SLw"/>
                         <constraint firstAttribute="bottom" secondItem="RZt-Vj-fNK" secondAttribute="bottom" id="CpH-F7-R7n"/>
                         <constraint firstAttribute="bottom" secondItem="LWM-3Q-7Gx" secondAttribute="bottom" id="FZo-Mv-ke4"/>
+                        <constraint firstAttribute="bottom" secondItem="dx8-s2-lNz" secondAttribute="bottom" id="FdI-gO-X8X"/>
+                        <constraint firstAttribute="trailing" secondItem="dx8-s2-lNz" secondAttribute="trailing" id="NDo-VD-QRz"/>
+                        <constraint firstItem="dx8-s2-lNz" firstAttribute="leading" secondItem="Yxe-Iu-VlJ" secondAttribute="leading" id="Ukc-Zb-JgG"/>
                         <constraint firstItem="LWM-3Q-7Gx" firstAttribute="top" secondItem="Yxe-Iu-VlJ" secondAttribute="top" id="jpW-Dh-kt7"/>
                         <constraint firstItem="LWM-3Q-7Gx" firstAttribute="leading" secondItem="Yxe-Iu-VlJ" secondAttribute="leading" id="pN1-zU-c5Q"/>
+                        <constraint firstItem="dx8-s2-lNz" firstAttribute="top" secondItem="Yxe-Iu-VlJ" secondAttribute="top" id="uQ0-RA-Xvd"/>
                         <constraint firstAttribute="width" secondItem="Yxe-Iu-VlJ" secondAttribute="height" multiplier="16:9" id="ucA-1x-QMF"/>
                         <constraint firstAttribute="trailing" secondItem="RZt-Vj-fNK" secondAttribute="trailing" id="z5r-bQ-9wV"/>
                     </constraints>
@@ -110,6 +118,7 @@
             <connections>
                 <outlet property="moviesCollectionView" destination="48k-JY-DMI" id="rtI-im-YKR"/>
                 <outlet property="placeButton" destination="BRX-LF-5Cu" id="vDN-BK-8Tm"/>
+                <outlet property="videoPlayer" destination="dx8-s2-lNz" id="rXO-4t-IdH"/>
             </connections>
             <point key="canvasLocation" x="480" y="330"/>
         </view>

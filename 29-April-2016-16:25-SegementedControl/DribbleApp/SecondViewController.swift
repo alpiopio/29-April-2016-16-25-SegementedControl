@@ -32,10 +32,14 @@ class SecondViewController: UICollectionViewController, UICollectionViewDelegate
         
         self.collectionView?.registerClass(secondCell.self, forCellWithReuseIdentifier: self.cellID)
         
-        // Gesture
+        // Swipe Gesture
         let recognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipe(_:)))
             recognizer.direction = UISwipeGestureRecognizerDirection.Left
         self.collectionView?.addGestureRecognizer(recognizer)
+        
+        // Pan Gesture
+        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.handlePan(_:)))
+        self.collectionView?.addGestureRecognizer(gestureRecognizer)
     }
     
     func didSwipe(recognizer: UIGestureRecognizer) {
@@ -46,6 +50,17 @@ class SecondViewController: UICollectionViewController, UICollectionViewDelegate
                     UIView.animateWithDuration(0.2, animations: {
                         swipedCell.frame = CGRectMake(UIScreen.mainScreen().bounds.width/2, swipedCell.frame.minY, swipedCell.frame.width, swipedCell.frame.height)
                     })
+                }
+            }
+        }
+    }
+    
+    func handlePan(gestureRecognizer: UIPanGestureRecognizer) {
+        if gestureRecognizer.state == UIGestureRecognizerState.Began || gestureRecognizer.state == UIGestureRecognizerState.Changed {
+            let translation = gestureRecognizer.translationInView(self.collectionView)
+            if let panIndexPath = self.collectionView?.indexPathForItemAtPoint(translation) {
+                if let panCell = self.collectionView?.cellForItemAtIndexPath(panIndexPath) {
+                    
                 }
             }
         }
