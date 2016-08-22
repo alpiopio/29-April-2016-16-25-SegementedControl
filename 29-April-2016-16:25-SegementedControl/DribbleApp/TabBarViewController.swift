@@ -30,7 +30,12 @@ class TabBarViewController: UITabBarController {
             thirdControllerNavigation.tabBarItem.title = "Gotix"
             thirdControllerNavigation.tabBarItem.image = UIImage(named: "shopping-cart-add")
         
-        self.viewControllers = [firstControllerNavigation, secondControllerNavigation, thirdControllerNavigation]
+        let fourthController = TableViewController()
+        let fourthControllerNavigation = UINavigationController(rootViewController: fourthController)
+            fourthControllerNavigation.tabBarItem.title = "Table"
+            fourthControllerNavigation.tabBarItem.image = UIImage(named: "briefcase")
+        
+        self.viewControllers = [firstControllerNavigation, secondControllerNavigation, thirdControllerNavigation, fourthControllerNavigation]
     }
 
 }
